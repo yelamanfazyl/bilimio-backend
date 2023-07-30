@@ -7,6 +7,7 @@ from pymongo import MongoClient
 class Config(BaseSettings):
     CORS_ORIGINS: list[str] = [
         "https://bilimio-frontend.vercel.app",
+        "https://bilimio.vercel.app",
         "http://localhost:5173",
     ]
     CORS_HEADERS: list[str] = ["*"]
